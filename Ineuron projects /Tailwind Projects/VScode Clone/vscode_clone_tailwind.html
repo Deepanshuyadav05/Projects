@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Studio Code - Code Editing.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./vs.jpeg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="flex h-12 bg-[#2C2C34] justify-center  fixed top-0 left-0 right-0 " >
+            
+                <div class="flex items-center">
+                    <a href="https://code.visualstudio.com/"><img src="./vs.jpeg" alt="VScode Logo" class="h-8"></a>
+                    <a href="https://code.visualstudio.com/" class="font-smbold text-white text-xl"> Virtual Studio Code </a>
+                    <a href="https://code.visualstudio.com/" class="text-[#6C6C74] font-medium px-3 ml-3">Docs</a>
+                    <a href="https://code.visualstudio.com/" class="text-[#6C6C74] font-medium px-3" px-3>Updates</a>
+                    <a href="https://code.visualstudio.com/" class="text-[#6C6C74] font-medium px-3">Blog</a>
+                    <a href="https://code.visualstudio.com/" class="text-[#6C6C74] font-medium px-3">API</a>
+                    <a href="https://code.visualstudio.com/" class="text-[#6C6C74] font-medium px-3">Extensions</a>
+                    <a href="https://code.visualstudio.com/" class="text-[#6C6C74] font-medium px-3">FAQ</a>
+                    <a href="https://code.visualstudio.com/" class="text-[#6C6C74] font-medium px-3">Learn</a>
+    
+                </div>
+    
+                <div class="flex ml-40" >
+                    <div class="bg-[#403C44]">
+                        <i class="fa-solid fa-magnifying-glass px-3 pt-4 text-[#ffffff] "></i>
+                        <input type="text" class="h-12 bg-[#403C44] text-sm" placeholder="Search Docs">
+                    </div>
+                    <div class="flex bg-[#0066B8] w-36 items-center text-[#ffffff]">
+                        <i class="fa-solid fa-download px-3"></i>
+                        <p class="font-semibold">Download </p>
+                    </div>
+                </div>
+            
+            
+        </nav>
+        <nav class="h-11 bg-[#25252B] flex justify-center items-center mt-12">
+            <p class="text-[#CCCCCC]">For educational purpose only </p>
+        </nav>
+    </header>
+
+
+    <div class=" bg-[#2C2C34] flex">
+        <div class="h-96 bg-[#2C2C34] h-[41rem] w-[25rem] ml-[25rem] pt-20">
+            <p class="text-6xl text-[#ffffff] font-light w-[22rem]">Code editing.<p>
+            <p class="text-6xl text-[#ffffff] pl-6 w-[22rem]">Redefined.<p>
+            <p class="text-[#ffffff99] w-[22.5rem] mt-3 text-[18px]">Free. Built on open source. Runs everywhere.</p>
+            <div class="mt-5 w-[22rem] flex justify-center">
+                <button class="h-16 pt-2.5 pb-2.5 w-[14.5rem] bg-[#0066B8] text-[#ffffff]"> <p class="text-lg font-medium">Download for Windows</p>
+                    <span class="text-[#ffffffE6] text-sm ">Stable Build</span>
+                </button>
+                <button class="ml-[0.1rem]  w-[2.6rem] h-[4rem] bg-[#0066B8] text-[#ffffff]"><i class="fa-solid fa-chevron-down ]"></i></button>
+                
+            </div>
+            <div class="mt-[15px] ml-[40px] w-[277px] bg-[#25252B] flex justify-center items-center w-[22.5rem] text-[14px] border p-[8px] border-[#25252B] rounded-lg h-[36px] text-[#ffffff99]">
+                <p> <a href="google" class="text-[#0098ff]">Web</a>,<a href="google" class="text-[#0098ff]">Insiders edition</a>, or  <a href="google" class="text-[#0098ff]">other platforms</a></p>
+            </div>
+            <div class="mt-[10px] mb-[15px] pt-[4px] pb-[4px] pr-[8px] pl-[8px] bg-[#2C2C34] w-[277px] h-[42px] text-[12px] ml-[80px]">
+                <p class="text-[#ffffff99]">By using VS Code, you agree to its</p>
+                <a href="google" class="text-[#0098ff]">license and privacy statement.</a>
+            </div>
+    
+        </div>
+        <div class="h-[590px] w-[46rem] pt-[60px] pb-[590px] "> 
+            <img src="./c.png" alt="code" >
+        </div>
+    </div>
+
+    <div class="flex items-center justify-center">
+        <div class="w-[262px] h-[128px] pt-[20px] pb-[20px] pl-[15px]  pr-[15px] flex flex-col justify-center items-center text-[20px]">
+            <i class="fa-solid fa-lightbulb size-12 text-5xl mb-[10px]"></i>
+            <p class="">IntelliSense</p>
+        </div>
+        <div class="w-[262px] h-[128px] pt-[20px] pb-[20px]  pl-[15px]  pr-[15px] flex flex-col justify-center items-center text-[20px]">
+            <i class="fa-solid fa-bug size-12 text-5xl mb-[10px]"></i>
+            <p>Run and Debug </p>
+        </div>
+        <div class="w-[262px] h-[128px] pt-[20px] pb-[20px]  pl-[15px]  pr-[15px] flex flex-col justify-center items-center text-[20px]">
+            <i class="fa-solid fa-code-branch size-12 text-5xl mb-[10px]"></i>
+            <p>Built-in Git</p>
+        </div>
+        <div class="w-[262px] h-[128px] pt-[20px] pb-[20px]  pl-[15px]  pr-[15px] flex flex-col justify-center items-center text-[20px]">
+            <i class="fa-solid fa-table-cells-large size-12 text-5xl mb-[10px]"></i>
+            <p>Extensions</p>
+        </div>
+    </div>
+
+    <div>
+        <div class="h-[383px] bg-[#F5F5F5] pt-[60px] pb[60px] flex justify-center">
+            <img src="./1.png" alt="img" class="w-[360px] h-[220px] mr-[150px] mt-[30px]">
+            <div>
+            <p class="text-[30px] mt-[20px] mb-[35px] text-[#242424] font-light ">Meet IntelliSense</p>
+            <p class="text-lg mb-[10px]">Go beyond syntax highlighting and autocomplete with IntelliSense, which</p>
+            <p class="text-lg mb-[10px]">provides smart completions based on variable types, function definitions, and</p>
+            <p class="text-lg mb-[10px]">imported modules.</p>
+            </div>
+            
+        </div>
+        <div class="h-[383px] bg-[#FFFFFF] pt-[60px] pb[60px] flex justify-center">
+            <div>
+                <p class="text-[30px] mt-[20px] mb-[35px] text-[#242424] font-light ">Print statement debugging is a thing of the past.
+                </p>
+                <p class="text-lg mb-[10px]">Debug code right from the editor. Launch or attach to your running apps and</p>
+             <p class="text-lg mb-[10px]">debug with break points, call stacks, and an interactive console.</p>
+            
+            </div>
+            <img src="./2.png" alt="img2" class="w-[360px] h-[220px] ml-[150px] mt-[30px]">
+
+        </div>
+        <div class="h-[383px] bg-[#F5F5F5] pt-[60px] pb[60px] flex justify-center">
+            
+                <img src="./3.png" alt="img" class="w-[360px] h-[220px] mr-[150px] mt-[30px]">
+                <div>
+                   <p class="text-[30px] mt-[20px] mb-[35px] text-[#242424] font-light ">Git commands built-in.</p>
+                   <p class="text-lg mb-[10px]">Working with Git and other SCM providers has never been easier. Review diffs,</p>
+                   <p class="text-lg mb-[10px]">stage files, and make commits right from the editor. Push and pull from any</p>
+                   <p class="text-lg mb-[10px]">hosted SCM service.</p>
+                </div>
+                
+
+        </div>
+        <div class="h-[383px] bg-[#FFFFFF] pt-[60px] pb[60px] flex justify-center">
+            <div>
+                <p class="text-[30px] mt-[20px] mb-[35px] text-[#242424] font-light ">Extensible and customizable.</p>
+                <p class="text-lg mb-[10px]">debuggers, and to connect to additional services. Extensions run in separate</p>
+                <p class="text-lg mb-[10px]">processes, ensuring they won't slow down your editor. <a href="google" class="text-[#0071Bc]">Learn more about</a></p>
+                <a href="google" class="text-[#0071Bc]">extensions.</a>
+            
+            </div>
+            <img src="./4.png" alt="img2" class="w-[360px] h-[220px] ml-[150px] mt-[30px]">
+        </div>
+        <div>
+            <div class="h-[383px] bg-[#F5F5F5] pt-[60px] pb[60px] flex justify-center">
+                <img src="./5.png" alt="img" class="w-[360px] h-[220px] mr-[150px] mt-[30px]">
+                <div>
+                <p class="text-[30px] mt-[20px] mb-[35px] text-[#242424] font-light ">Deploy with confidence and ease</p>
+                <p class="text-lg mb-[10px]">With <a href="google" class="text-[#0071Bc]">Microsoft Azure</a> you can deploy and host your React, Angular, Vue, Node,</p>
+                <p class="text-lg mb-[10px]">Python (and more!) sites, store and query relational and document based data,</p>
+                <p class="text-lg mb-[10px]">and scale with serverless computing, all with ease, <a href="google" class="text-[#0071Bc]">all from within VS Code</a>.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="h-[356px] pt-[60px] pb-[60px] flex flex-col justify-center ">
+        <div class="flex justify-center">
+            <h2 class="h-[33px] text-3xl mt-[20px] mb-[35px] font-light">VS Code for</h2>
+        </div> 
+        <div class="flex justify-center text-lg  mb-[20px]">
+            <span class="flex w-[128px] pr-[15px] pl-[15px] mr-[15px]">
+            <img src="./js.png" alt="js">
+            <p>JavaScript</p>
+            </span>  
+            <span class="flex w-[128px] pr-[15px] pl-[15px] mr-[15px]">
+                <img src="./py.png" alt="py">
+                <p>Python</p>
+            </span>
+            <span class="flex w-[128px] pr-[15px] pl-[15px] mr-[15px]">
+                <img src="./java.png" alt="java">
+                <p>JAVA</p>
+            </span>
+            <span class="flex w-[128px] pr-[15px] pl-[15px] mr-[15px]">
+                <img src="./mark.png" alt="mark">
+                <p>Markdown</p>
+            </span>
+            <span class="flex w-[128px] pr-[15px] pl-[15px] mr-[15px]">
+                <img src="./ts.png" alt="ts">
+                <p>Typescript</p>
+            </span>
+            <span class="flex w-[128px] pr-[15px] pl-[15px] mr-[15px]">
+                <img src="./cc.png" alt="cc">
+                <p>C/C++</p>
+            </span>
+    
+        </div>
+
+        <div class="flex justify-center text-lg mb-[20px]">
+            <span class="flex w-[128px] pr-[15px] pl-[15px] mr-[15px]">
+            <img src="./jso.png" alt="json">
+            <p>JSON</p>
+            </span>  
+            <span class="flex w-[128px] pr-[15px] pl-[15px] mr-[15px]">
+                <img src="./pow.png" alt="pow">
+                <p>Powershell</p>
+            </span>
+            <span class="flex w-[128px] pr-[15px] pl-[15px] mr-[15px]">
+                <img src="./htm.png" alt="html">
+                <p>HTML/CSS</p>
+            </span>
+            <span class="flex w-[128px] pr-[15px] pl-[15px] mr-[15px]">
+                <img src="./cs.png" alt="cs">
+                <p>C#</p>
+            </span>
+            <span class="flex w-[128px] pr-[15px] pl-[15px] mr-[15px]">
+                <img src="./ph.png" alt="php">
+                <p>php</p>
+            </span>
+            <span class="flex w-[128px] pr-[15px] pl-[15px] mr-[15px]">
+                <img src="./ym.png" alt="ympl">
+                <p>YAML</p>
+            </span>
+    
+        </div>
+        <div class="flex justify-center mb-[10px]">
+            <a href="google" class="text-[#0077BC]">and many more languages on the Marketplace...</a>
+        </div>
+
+        <div class="flex justify-center mt-[40px] mb-[20px]">
+            <button class="w-[220px] h-[58px] bg-[#0066B8]">Get Started Now</button>
+        </div>
+
+    </div> 
+
+
+
+    <!-- Logos -->
+
+    <div class="h-[470px] pt-[60px] pb-[60px] bg-[#F5F5F5] flex justify-center">
+
+        <!-- Windows -->
+        <div class="w-[290px] h-[327px] flex flex-col  items-center">
+            <div>
+                <i class="fa-brands fa-windows text-9xl ml-[70px] mr-[70px] text-[#0066B8]"></i>
+            </div>
+            <div>
+                <button class="bg-[#0066B8] w-[240px] h-[70px] text-[#ffffff] mt-[20px] mb-[5px]">
+                    <div class="flex text-lg justify-center">
+                        <i class="fa-solid fa-download text-lg mr-[10px]"></i>
+                        <p>Windows</p>
+                    </div>
+                    <span class="text-xs">Windows 10,11</span>
+                    
+                </button>
+            </div>
+            <div class="mt-[15px]">
+                <table>
+                    <tbody>
+                        <tr>
+                            
+                            <td  class="flex justify-center w-[143px]">
+                                <strong class="font-medium">User Installer</strong>
+                            </td>
+                            <td  class="pr-[5px]">
+                                <a href="google" class="bg-[#0066B8] text-[#ffffff]  rounded-[2px] text-xs">x64</a>
+                            </td>
+                            <td>
+                                <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm64</a>
+                            </td>
+                        
+                        <tr>
+                            <td class="flex justify-center">
+                                <strong class="font-medium">System Installer</strong>
+                            </td>
+                            <td>
+                                <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">x64</a>
+                            </td>
+                            <td>
+                                <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm64</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="flex justify-center">
+                                <strong  class="font-medium">Zip</strong>
+                            </td>
+                            <td>
+                                <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">x64</a>
+                            </td>
+                            <td>
+                                <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm64</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="flex justify-center">
+                                <strong  class="font-medium">CLI</strong>
+                            </td>
+                            <td>
+                                <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">x64</a>
+                            </td>
+                            <td>
+                                <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm64</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+                <!-- LINUX -->
+
+                <div class="w-[290px] h-[327px] flex flex-col  items-center">
+                    <div>
+                        <i class="fa-brands fa-linux text-9xl ml-[70px] mr-[70px] "></i>
+                    </div>
+                    <div class="flex">
+                        <button class="bg-[#0066B8] w-[147px] h-[70px] text-[#ffffff] mt-[20px] mb-[5px] mr-[5px]">
+                            <div class="flex text-lg justify-center">
+                                <i class="fa-solid fa-download text-lg mr-[10px]"></i>
+                                <p>.deb</p>
+                            </div>
+                            <span class="text-xs">Debian, Ubuntu</span>
+                            
+                        </button>
+
+                        <button class="bg-[#0066B8] w-[147px] h-[70px] text-[#ffffff] mt-[20px] mb-[5px]">
+                            <div class="flex text-lg justify-center">
+                                <i class="fa-solid fa-download text-lg mr-[10px]"></i>
+                                <p>.rpm</p>
+                            </div>
+                            <span class="text-xs">Red Hat, Fedora, SUSE</span>
+                            
+                        </button>
+                    </div>
+                    <div class="mt-[15px]">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    
+                                    <td  class="flex justify-center w-[47px]">
+                                        <strong class="font-medium">.deb</strong>
+                                    </td>
+                                    <td class="pr-[5px]">
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff]  rounded-[2px] text-xs ">x64</a>
+                                    </td>
+                                    <td class="pr-[5px]">
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm32</a>
+                                    </td>
+                                    <td class="pr-[5px]">
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm64</a>
+                                    </td>
+                                
+                                <tr>
+                                    <td class="flex justify-center">
+                                        <strong class="font-medium">.rpm</strong>
+                                    </td>
+                                    <td>
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">x64</a>
+                                    </td>
+                                    <td>
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm32</a>
+                                    </td>
+                                    <td>
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm64</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="flex justify-center">
+                                        <strong  class="font-medium">.tar.gz</strong>
+                                    </td>
+                                    <td>
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">x64</a>
+                                    </td>
+                                    <td>
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm32</a>
+                                    </td>
+                                    <td>
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm64</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="flex justify-center">
+                                        <strong  class="font-medium">Snap</strong>
+                                    </td>
+                                    <td>
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">x64</a>
+                                    </td>
+                                    <td>
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm32</a>
+                                    </td>
+                                    <td>
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm64</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="flex justify-center">
+                                        <strong  class="font-medium">CLI</strong>
+                                    </td>
+                                    <td>
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">x64</a>
+                                    </td>
+                                    <td>
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm32</a>
+                                    </td>
+                                    <td>
+                                        <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Arm64</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+                    </div>
+                </div>
+
+                        <!-- Mac -->
+        <div class="w-[290px] h-[327px] flex flex-col  items-center">
+            <div>
+                <i class="fa-brands fa-apple text-9xl ml-[70px] mr-[70px] text-[#000000]"></i>
+            </div>
+            <div>
+                <button class="bg-[#0066B8] w-[240px] h-[70px] text-[#ffffff] mt-[20px] mb-[5px]">
+                    <div class="flex text-lg justify-center">
+                        <i class="fa-solid fa-download text-lg mr-[10px]"></i>
+                        <p>Mac</p>
+                    </div>
+                    <span class="text-xs">MacOS 10.5</span>
+                    
+                </button>
+            </div>
+            <div class="mt-[15px]">
+                <table>
+                    <tbody>
+                        <tr>
+                            
+                            <td  class="flex justify-center w-[25px]">
+                                <strong class="font-medium mr-[10px]">.ZIP</strong>
+                            </td>
+                            <td  class="pr-[5px]">
+                                <a href="google" class="bg-[#0066B8] text-[#ffffff]  rounded-[2px] text-xs">Intel chip</a>
+                            </td>
+                            <td>
+                                <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Apple silicon</a>
+                            </td>
+                            <td>
+                                <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Universal</a>
+                            </td>
+                        
+                        <tr>
+                            <td class="flex justify-center">
+                                <strong class="font-medium mr-[10px]">CLI</strong>
+                            </td>
+                            <td>
+                                <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Intel chip</a>
+                            </td>
+                            <td>
+                                <a href="google" class="bg-[#0066B8] text-[#ffffff] rounded-[2px] text-xs">Apple silicon</a>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+                
+           
+
+    </div>
+
+    <div class="bg-[#F5F5F5] h-[433px]">
+        <div class="flex justify-center">
+            <div class="w-[555px] pt-[20px] pb-[20px] pr-[110px] pl-[110px]">
+                <p class="text-xl mt-[20px] mb-[5px] font-medium">Want new features sooner?</p>
+                <p class="mb-[10px] text-lg">Get the <a href="google" class="text-[#0066B8]"> Insiders build</a> instead.</p>
+            </div>
+            <div class="w-[555px] pt-[20px] pb-[20px] pr-[110px] pl-[110px] flex flex-col justify-center items-center">
+                <p class="text-xl mt-[20px] font-medium">Use  <a href="google" class="text-[#0066B8]">vscode.dev</a>  for quick edits</p>
+                <p class="text-xl mb-[5px] font-medium">online!</p>
+                <p class="text-lg">GitHub, Azure Repos, and local files.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center h-[256px] pt-[20px] pb-[20px] pl-[228px] pr-[228px]">
+            <h3 class="mt-[20px] mb-[15px] font-semibold text-[#242424]">License and Privacy Terms</h3>
+            <p class="text-sm text-[#242424] mb-[15px]">By downloading and using Visual Studio Code, you agree to the <a href="google" class="text-[#0066B8]">license terms</a> and <a href="google" class="text-[#0066B8]">privacy statement</a> . VS Code</p>
+            <p class="text-sm text-[#242424] mb-[15px]">automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not</p>
+            <p class="text-sm text-[#242424] mb-[15px]">to have this data sent please go see <a href="google" class="text-[#0066B8]">How to Disable Crash Reporting</a>  to learn how to disable it. Third party</p>
+            <p class="text-sm text-[#242424] mb-[15px]">licenses for the CLI can be <a href="google" class="text-[#0066B8]">found here</a> .</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="h-[90px] bg-[#333333] pt-[20px] pb-[20px] flex justify-center items-center text-[#ffffff]">
+            <div class="flex h-[35px] w-[585px]">
+                <span class="pr-[20px] text-sm">Hello from seattle.</span>
+                <a href="google"  class="pr-[20px] text-sm">Follow@code</a>
+
+                <a href="google" class="bg-[#ffffff] h-[20px] w-[50px] flex justify-center rounded">
+                    <span><i class="fa-brands fa-github text-[#000000] bg-[#ffffff] size-3.5"></i></span>
+                    <span class="text-[#000000] bg-[#ffffff] text-xs mt-[3px] ml-[2px] ">Star</span>
+                </a>
+                
+                <a href="google" class="bg-[#ffffff] h-[20px] w-[50px] flex justify-center items-center rounded text-[#000000] ml-[3px] text-xs">159,257</a>
+                
+            </div>
+            <div class="w-[585px] h-[40px] flex justify-end">
+                <a href="google" class="text-xs pr-[20px]">Support</a>
+                <a href="google" class="text-xs pr-[20px]">Privacy</a>
+                <a href="google" class="text-xs pr-[20px]">Tearms of use</a>
+                <a href="google" class="text-xs pr-[20px]">Licence </a>
+
+                <div>
+                    <img src="./microsoft-logo.png" alt="img" class="h-[20px]">
+                    <span>© 2024 Microsoft</span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
